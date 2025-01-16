@@ -1,0 +1,67 @@
+3. API Endpoints Plan :
+
+Planned Endpoints:
+
+
+/products (GET)
+Description: Fetch all product details.
+Response Example:
+
+[
+  {
+    "id": "1",
+    "name": "T-Shirt",
+    "price": 20.0,
+    "stock": 50
+  }
+]
+
+
+
+/rentals (GET)
+Description: Fetch all available rental helicopters.
+Response Example:
+
+[
+  {
+    "id": "1",
+    "name": "Helicopter A",
+    "rentalPrice": 500,
+    "availability": true
+  }
+]
+
+
+/orders (POST)
+Description: Save new order details.
+Request Example:
+
+{
+  "customerId": "123",
+  "products": ["1", "2"],
+  "total": 40.0
+}
+
+
+
+/rentalOrders (POST)
+Description: Save new rental booking details.
+Request Example:
+
+{
+  "customerId": "123",
+  "helicopterId": "1",
+  "rentalDuration": 5,
+  "total": 2500
+}
+
+
+
+/shipment (GET)
+Description: Fetch the shipment status for an order.
+Response Example:
+
+{
+  "orderId": "123",
+  "status": "In Transit"
+}

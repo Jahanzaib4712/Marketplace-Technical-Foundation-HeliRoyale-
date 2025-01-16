@@ -1,0 +1,78 @@
+Frontend
+
+Technology Stack
+Framework: Next.js
+A React-based framework that enables server-side rendering (SSR) and static site generation (SSG), perfect for building high-performance and SEO-friendly applications.
+UI Library: shadcn/ui
+Provides pre-built, customizable UI components that work seamlessly with Tailwind CSS.
+Styling Framework: Tailwind CSS
+A utility-first CSS framework for fast and responsive design.
+Pages to Create
+
+
+Home Page :
+
+Features: Display promotional banners, featured products, and categories.
+Libraries/Features to Use:
+shadcn/ui components like Card, Button, and Carousel.
+Tailwind CSS for responsive design.
+
+
+Product Listing Page : 
+
+Features: Show all products with options for filtering (category, price range) and sorting (price, popularity).
+Libraries/Features to Use:
+shadcn/ui components like Select, Input, and Grid.
+Use dynamic routes (pages/products/[category].tsx) for category-based listing.
+
+
+
+Product Details Page :
+
+Features: Show detailed product information (image gallery, price, description, and stock status).
+Libraries/Features to Use:
+shadcn/ui components like Modal, Carousel, and Tabs.
+Image optimization using Next.js <Image> component.
+
+
+
+Cart Page :
+ 
+Features: View and update selected product quantities with a summary of the total price.
+Libraries/Features to Use:
+shadcn/ui components like Table and Badge.
+Persist cart data in localStorage or context.
+
+
+
+Checkout Page :
+
+Features: Collect user information (address, payment details) and process payments.
+Libraries/Features to Use:
+shadcn/ui components like Form and Input.
+Integrate a payment gateway like Stripe.
+
+
+
+Rental Listing Page :
+
+Features: Display all rentable helicopters with filters for availability and pricing.
+Libraries/Features to Use:
+Dynamic routes (pages/rentals/[id].tsx) for individual helicopter details.
+shadcn/ui components like Card and Filter.
+
+
+
+Rental Details Page :
+
+Features: Show detailed information about the selected helicopter, including pricing and rental terms.
+Libraries/Features to Use:
+shadcn/ui components like Modal and Accordion.
+
+
+
+Rental Cart Page :
+
+Features: View selected rental items and finalize booking details.
+Libraries/Features to Use:
+shadcn/ui components for form handling and summary display.
